@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Practice</title>
+    </head>
+    <body>
+        <form action="register" method="post">
+            <fieldset>
+                <legend>personal details</legend>
+
+                Name:<input type="text" name="name"><br><br>
+                email:<input type="email" name="email"><br><br>
+                password:<input type="password" name="pwd"><br><br>
+
+                gender:
+                <input type="radio" name="gender" value="Male">Male
+                <input type="radio" name="gender" value="female">Female<br><br>
+
+                Date of birth:<input type="date" value="dob"><br><br>
+
+                course:
+                <select name="course">
+                    <option value="Bca">bca</option>
+                    <option value="Bba">bba</option>
+                </select>
+
+               adress: <textarea rowspan="12" colspan="30"></textarea>
+
+               <input type="submit" value="register">
+               <input type="reset" value="clear">
+            </fieldset>
+
+        </form>
+    </body>
+</html>

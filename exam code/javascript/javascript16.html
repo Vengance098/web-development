@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>practice</title>
+    </head>
+    <body>
+        <form onsubmit="return validate()">
+            <fieldset>
+                <legend>details</legend>
+                name:<input type="text" id="name">
+                phone:<input type="text" id="phone">
+                <input type="submit">
+            </fieldset>
+        </form>
+        <script>
+            function validate(){
+                let name=document.getElementById("name").value;
+                if(name==""||name.length<3){
+                    alert("enter name proper");
+                    return false;
+                }
+                let phone=document.getElementById("phone").value;
+                let pattern=/^[0-9]{10}$/;
+                if(!pattern.test(phone)){
+                    alert("enter proper 10 digit number");
+                    return false;
+                }
+                return true;
+            }
+        </script>
+    </body>
+</html>

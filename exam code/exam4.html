@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+<body>
+<h2>Registration Form</h2>
+
+<form action="/register" method="post">
+
+    <fieldset>
+        <legend>Personal Details</legend>
+
+        Full Name: <input type="text" name="fullname"><br><br>
+
+        Email: <input type="email" name="email"><br><br>
+
+        Password: <input type="password" name="pwd"><br><br>
+
+        Gender:
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+        <br><br>
+
+        Date of Birth: <input type="date" name="dob"><br><br>
+
+        Course:
+        <select name="course">
+            <option value="bca">BCA</option>
+            <option value="bba">BBA</option>
+            <option value="bsc">B.Sc</option>
+        </select><br><br>
+
+        Hobbies:
+        <input type="checkbox" name="hobby" value="reading"> Reading
+        <input type="checkbox" name="hobby" value="sports"> Sports
+        <br><br>
+
+        Address:<br>
+        <textarea name="address" rows="4" cols="30"></textarea><br><br>
+
+        Profile Picture: <input type="file" name="profile_pic"><br><br>
+
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear">
+
+    </fieldset>
+</form>
+</body>
+</html>

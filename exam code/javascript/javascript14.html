@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Validation</title>
+</head>
+<body>
+
+    <h1>Chapter 12 Practice</h1>
+
+    <form onsubmit="return validateForm()">
+        Name: <input type="text" id="uname"><br><br>
+        Mobile: <input type="text" id="mobile"><br><br>
+        <input type="submit">
+    </form>
+
+    <script>
+        function validateForm() {
+
+            let name = document.getElementById("uname").value;
+
+            if (name == "") {
+                alert("Name is required");
+                return false;
+            }
+
+            if (name.length < 3) {
+                alert("Name must be at least 3 characters");
+                return false;
+            }
+
+            let mobile = document.getElementById("mobile").value;
+            let pattern = /^[0-9]{10}$/;
+
+            if (!pattern.test(mobile)) {
+                alert("Enter a valid 10-digit mobile number");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+
+</body>
+</html>

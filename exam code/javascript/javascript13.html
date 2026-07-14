@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Style Change</title>
+</head>
+<body>
+
+    <h1>Chapter 10b Practice</h1>
+    <p id="demo">Some text here.</p>
+    <button onclick="changeStyle()">Change My Style</button>
+
+    <script>
+        function changeStyle() {
+            document.getElementById("demo").style.color = "red";
+            document.getElementById("demo").style.fontSize = "30px";
+            document.getElementById("demo").innerHTML="the text has changed";
+        }
+    </script>
+
+</body>
+</html>

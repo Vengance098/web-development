@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Practice</title>
+    </head>
+    <body>
+        <form onsubmit="return validateform()">
+            <fieldset>
+                <legend>Personal details</legend>
+                Name:<input type="text" id="name"><br><br>
+                phone:<input type="text" id="phone"><br><br>
+
+                <input type="submit">
+            </fieldset>
+
+            <script>
+                function validateform(){
+
+                    let name=document.getElementById("name").value;
+
+                    if(name=="" || name.length<3){
+                        alert("enter valid name ");
+                        return false;
+                    }
+
+                    let phone=document.getElementById("phone").value;
+                    let pattern=/^[0-9]{10}$/;
+
+                    if(!pattern.test(phone)){
+                        alert("laude");
+                        return false;
+                    }
+                    return true;
+                }
+            </script>
+        </form>
+    </body>
+</html>
