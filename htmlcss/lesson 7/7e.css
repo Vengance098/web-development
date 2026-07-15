@@ -1,0 +1,12 @@
+.searchb{
+    font-size:18px;
+    padding-left:15px;
+    padding-right:15px;
+    padding-top:12px;
+    padding-bottom:12px;
+    width:500px;
+    border-radius:25px;
+    box-shadow:0px 1px 5px rgba(0,0,0,0.5);
+    border:none;
+    vertical-align:center;
+}
