@@ -1,0 +1,40 @@
+input{
+    
+    margin-bottom:8px;
+    
+   
+    padding-left:15px;
+    padding-right:15px;
+    padding-top:12px;
+    padding-bottom:12px;
+    font-size:18px;
+    border-width:1px;
+    border-style:solid;
+    border-color:rgb(200,200,200);
+    border-radius:8px;
+}
+.email{
+    width:335px;
+    display:block;
+}
+.first{
+    width:148px;
+}
+.last{
+    
+    width:148px;
+}
+.Signup{
+    width:370px;
+    padding-left:15px;
+    padding-right:15px;
+    padding-top:12px;
+    padding-bottom:12px;
+    font-size:16px;
+    color:white;
+    background-color:rgb(0, 183, 255);
+    border-radius:25px;
+    border:none;
+
+    
+}
